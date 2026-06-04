@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Phage-bacteria coevolution arms race graphic">
+<defs>
+  <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#001525"/>
+    <stop offset="100%" stop-color="#003825"/>
+  </linearGradient>
+  <linearGradient id="phg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#1A90D4"/>
+    <stop offset="100%" stop-color="#004F85"/>
+  </linearGradient>
+  <filter id="glow2">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<!-- Background -->
+<rect width="800" height="600" fill="url(#cbg)"/>
+
+<!-- Dot grid -->
+<g fill="rgba(255,255,255,0.035)">
+  <circle cx="80"  cy="80"  r="1.5"/><circle cx="200" cy="80"  r="1.5"/><circle cx="320" cy="80"  r="1.5"/>
+  <circle cx="440" cy="80"  r="1.5"/><circle cx="560" cy="80"  r="1.5"/><circle cx="680" cy="80"  r="1.5"/>
+  <circle cx="80"  cy="200" r="1.5"/><circle cx="200" cy="200" r="1.5"/><circle cx="320" cy="200" r="1.5"/>
+  <circle cx="440" cy="200" r="1.5"/><circle cx="560" cy="200" r="1.5"/><circle cx="680" cy="200" r="1.5"/>
+  <circle cx="80"  cy="320" r="1.5"/><circle cx="200" cy="320" r="1.5"/><circle cx="320" cy="320" r="1.5"/>
+  <circle cx="440" cy="320" r="1.5"/><circle cx="560" cy="320" r="1.5"/><circle cx="680" cy="320" r="1.5"/>
+  <circle cx="80"  cy="440" r="1.5"/><circle cx="200" cy="440" r="1.5"/><circle cx="320" cy="440" r="1.5"/>
+  <circle cx="440" cy="440" r="1.5"/><circle cx="560" cy="440" r="1.5"/><circle cx="680" cy="440" r="1.5"/>
+</g>
+
+<!-- ── AXES ── -->
+<line x1="70" y1="490" x2="740" y2="490" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+<line x1="70" y1="80"  x2="70"  y2="490" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+<!-- X tick marks -->
+<line x1="200" y1="487" x2="200" y2="496" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+<line x1="330" y1="487" x2="330" y2="496" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+<line x1="460" y1="487" x2="460" y2="496" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+<line x1="590" y1="487" x2="590" y2="496" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+<line x1="720" y1="487" x2="720" y2="496" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+<!-- Y tick marks -->
+<line x1="62" y1="150" x2="74" y2="150" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+<line x1="62" y1="250" x2="74" y2="250" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+<line x1="62" y1="350" x2="74" y2="350" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+<line x1="62" y1="430" x2="74" y2="430" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+
+<!-- Axis labels -->
+<text x="400" y="525" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-family="Montserrat,sans-serif" font-size="13" font-weight="600">Time (generations)</text>
+<text x="28" y="290" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-family="Montserrat,sans-serif" font-size="13" font-weight="600" transform="rotate(-90 28 290)">Fitness</text>
+
+<!-- ── PHAGE FITNESS CURVE (blue, oscillating high-low-high) ── -->
+<!-- Phage fitness rises when bacteria susceptible, falls when resistance evolves -->
+<path d="M 70,420
+         C 100,420 130,180 160,155
+         C 190,130 220,400 260,420
+         C 300,440 330,180 370,155
+         C 400,130 430,360 470,380
+         C 500,395 530,160 570,140
+         C 600,125 640,340 680,360
+         C 700,368 720,365 740,360"
+      fill="none" stroke="#0071BC" stroke-width="3" stroke-linecap="round" filter="url(#glow2)"/>
+<!-- Phage fill area -->
+<path d="M 70,490 L 70,420
+         C 100,420 130,180 160,155
+         C 190,130 220,400 260,420
+         C 300,440 330,180 370,155
+         C 400,130 430,360 470,380
+         C 500,395 530,160 570,140
+         C 600,125 640,340 680,360
+         C 700,368 720,365 740,360
+         L 740,490 Z"
+      fill="rgba(0,113,188,0.10)"/>
+
+<!-- ── BACTERIA FITNESS CURVE (green, anti-phase) ── -->
+<path d="M 70,175
+         C 100,175 130,420 165,440
+         C 195,458 230,190 265,165
+         C 295,145 325,420 365,438
+         C 395,453 430,190 468,168
+         C 498,150 530,400 570,415
+         C 600,428 640,175 680,158
+         C 705,148 725,152 740,155"
+      fill="none" stroke="#2D9162" stroke-width="3" stroke-linecap="round" filter="url(#glow2)"/>
+<!-- Bacteria fill area -->
+<path d="M 70,490 L 70,175
+         C 100,175 130,420 165,440
+         C 195,458 230,190 265,165
+         C 295,145 325,420 365,438
+         C 395,453 430,190 468,168
+         C 498,150 530,400 570,415
+         C 600,428 640,175 680,158
+         C 705,148 725,152 740,155
+         L 740,490 Z"
+      fill="rgba(45,145,98,0.08)"/>
+
+<!-- ── SMALL PHAGE ICONS at phage fitness peaks ── -->
+<!-- Peak 1: ~(160, 155) -->
+<polygon points="160,136 168,141 168,151 160,156 152,151 152,141" fill="#0071BC" opacity="0.9"/>
+<rect x="157" y="156" width="6" height="12" fill="#003870"/>
+<path d="M 157,168 Q 150,172 144,176" fill="none" stroke="#0071BC" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M 163,168 Q 170,172 176,176" fill="none" stroke="#0071BC" stroke-width="1.2" stroke-linecap="round"/>
+
+<!-- Peak 2: ~(370, 155) -->
+<polygon points="370,136 378,141 378,151 370,156 362,151 362,141" fill="#0071BC" opacity="0.9"/>
+<rect x="367" y="156" width="6" height="12" fill="#003870"/>
+<path d="M 367,168 Q 360,172 354,176" fill="none" stroke="#0071BC" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M 373,168 Q 380,172 386,176" fill="none" stroke="#0071BC" stroke-width="1.2" stroke-linecap="round"/>
+
+<!-- Peak 3: ~(570, 140) -->
+<polygon points="570,121 578,126 578,136 570,141 562,136 562,126" fill="#0071BC" opacity="0.9"/>
+<rect x="567" y="141" width="6" height="12" fill="#003870"/>
+<path d="M 567,153 Q 560,157 554,161" fill="none" stroke="#0071BC" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M 573,153 Q 580,157 586,161" fill="none" stroke="#0071BC" stroke-width="1.2" stroke-linecap="round"/>
+
+<!-- ── SMALL BACTERIA at bacteria fitness peaks ── -->
+<!-- Peak B1: ~(265, 165) -->
+<ellipse cx="265" cy="147" rx="22" ry="9" fill="rgba(45,145,98,0.0)" stroke="#2D9162" stroke-width="2"/>
+<ellipse cx="265" cy="147" rx="9"  ry="4" fill="none" stroke="#2D9162" stroke-width="1.2" opacity="0.5"/>
+
+<!-- Peak B2: ~(468, 168) -->
+<ellipse cx="468" cy="150" rx="22" ry="9" fill="rgba(45,145,98,0.0)" stroke="#2D9162" stroke-width="2"/>
+<ellipse cx="468" cy="150" rx="9"  ry="4" fill="none" stroke="#2D9162" stroke-width="1.2" opacity="0.5"/>
+
+<!-- Peak B3: ~(680, 158) -->
+<ellipse cx="680" cy="140" rx="22" ry="9" fill="rgba(45,145,98,0.0)" stroke="#2D9162" stroke-width="2"/>
+<ellipse cx="680" cy="140" rx="9"  ry="4" fill="none" stroke="#2D9162" stroke-width="1.2" opacity="0.5"/>
+
+<!-- ── RESISTANCE EVENT annotations ── -->
+<!-- Vertical dashed line at resistance jump 1 (~x=230) -->
+<line x1="228" y1="100" x2="228" y2="480" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="235" y="115" fill="rgba(255,255,255,0.40)" font-family="Montserrat,sans-serif" font-size="10" font-weight="600">Resistance</text>
+<text x="235" y="127" fill="rgba(255,255,255,0.40)" font-family="Montserrat,sans-serif" font-size="10" font-weight="600">emerges</text>
+
+<!-- Vertical dashed line at resistance jump 2 (~x=435) -->
+<line x1="433" y1="100" x2="433" y2="480" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="5,4"/>
+
+<!-- ── LEGEND ── -->
+<rect x="560" y="470" width="220" height="95" rx="8" fill="rgba(0,0,0,0.30)"/>
+<line x1="576" y1="493" x2="606" y2="493" stroke="#0071BC" stroke-width="3" stroke-linecap="round"/>
+<circle cx="591" cy="493" r="4" fill="#0071BC"/>
+<text x="614" y="497" fill="rgba(255,255,255,0.80)" font-family="Montserrat,sans-serif" font-size="12" font-weight="600">Phage fitness</text>
+<line x1="576" y1="518" x2="606" y2="518" stroke="#2D9162" stroke-width="3" stroke-linecap="round"/>
+<circle cx="591" cy="518" r="4" fill="#2D9162"/>
+<text x="614" y="522" fill="rgba(255,255,255,0.80)" font-family="Montserrat,sans-serif" font-size="12" font-weight="600">Bacterial fitness</text>
+<text x="670" y="550" text-anchor="middle" fill="rgba(255,255,255,0.40)" font-family="Montserrat,sans-serif" font-size="10">Anti-correlated oscillations</text>
+
+<!-- Title badge -->
+<rect x="82" y="30" width="240" height="36" rx="8" fill="rgba(0,113,188,0.14)" stroke="rgba(0,113,188,0.35)" stroke-width="1"/>
+<text x="202" y="53" text-anchor="middle" fill="rgba(255,255,255,0.88)" font-family="Montserrat,sans-serif" font-size="13" font-weight="700">Phage–Bacteria Arms Race</text>
+
+<!-- Bottom bar -->
+<rect x="0" y="564" width="800" height="36" fill="rgba(0,0,0,0.30)"/>
+<text x="400" y="587" text-anchor="middle" fill="rgba(255,255,255,0.52)" font-family="Montserrat,sans-serif" font-size="11" font-weight="700" letter-spacing="0.08em">COEVOLUTIONARY DYNAMICS  ·  RESISTANCE PREDICTION  ·  PhREEPred</text>
+
+</svg>

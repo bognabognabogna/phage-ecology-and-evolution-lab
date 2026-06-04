@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 48 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Phage Ecology and Evolution Group logo mark">
+<defs>
+  <!-- Orange phage head -->
+  <linearGradient id="lg-hg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFAA44"/>
+    <stop offset="100%" stop-color="#C44400"/>
+  </linearGradient>
+  <!-- Blue tail tube -->
+  <linearGradient id="lg-tg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1A8ED4"/>
+    <stop offset="100%" stop-color="#003870"/>
+  </linearGradient>
+  <!-- Green bacterium -->
+  <linearGradient id="lg-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#5ED498"/>
+    <stop offset="100%" stop-color="#2D9162"/>
+  </linearGradient>
+</defs>
+
+<!-- ── PHAGE HEAD (flat-top hexagon) ── -->
+<polygon points="15,9 33,9 42,18 33,27 15,27 6,18"
+         fill="url(#lg-hg)" stroke="#7B2500" stroke-width="1.2"/>
+<!-- Specular highlight -->
+<polygon points="15,9 33,9 42,18 24,15" fill="rgba(255,255,255,0.16)"/>
+<!-- Packaged DNA (horizontal lines) -->
+<line x1="12" y1="15" x2="36" y2="15" stroke="rgba(255,255,255,0.42)" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="11" y1="18" x2="37" y2="18" stroke="rgba(255,255,255,0.42)" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="12" y1="21" x2="36" y2="21" stroke="rgba(255,255,255,0.32)" stroke-width="1.3" stroke-linecap="round"/>
+
+<!-- ── COLLAR ── -->
+<rect x="20" y="27" width="8" height="5" rx="0.8" fill="#7B2500"/>
+<line x1="20.5" y1="29.5" x2="27.5" y2="29.5" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+
+<!-- ── TAIL TUBE ── -->
+<rect x="22" y="32" width="4" height="17" rx="0.8" fill="url(#lg-tg)"/>
+<line x1="22.5" y1="37" x2="25.5" y2="37" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+<line x1="22.5" y1="42" x2="25.5" y2="42" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+<line x1="22.5" y1="47" x2="25.5" y2="47" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+
+<!-- ── BASEPLATE ── -->
+<rect x="17" y="49" width="14" height="4" rx="1.2" fill="#001e38"/>
+
+<!-- ── TAIL FIBRES (2 per side, curved) ── -->
+<path d="M 19,51 Q 10,60 8,67" fill="none" stroke="#0071BC" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 21,53 Q 13,61 12,65" fill="none" stroke="#0071BC" stroke-width="1.1" stroke-linecap="round"/>
+<path d="M 29,51 Q 38,60 40,67" fill="none" stroke="#0071BC" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 27,53 Q 35,61 36,65" fill="none" stroke="#0071BC" stroke-width="1.1" stroke-linecap="round"/>
+
+<!-- Fibre tips (receptor-binding proteins) -->
+<circle cx="8"  cy="67" r="1.8" fill="#0071BC"/>
+<circle cx="12" cy="65" r="1.4" fill="#0071BC"/>
+<circle cx="40" cy="67" r="1.8" fill="#0071BC"/>
+<circle cx="36" cy="65" r="1.4" fill="#0071BC"/>
+
+<!-- ── INJECTION CHANNEL ── -->
+<line x1="24" y1="53" x2="24" y2="63" stroke="#5ECDA6" stroke-width="1.6" stroke-dasharray="3,2.5"/>
+<path d="M 21,63 L 27,63" stroke="#5ECDA6" stroke-width="2" stroke-linecap="round"/>
+
+<!-- ── BACTERIUM ── -->
+<ellipse cx="24" cy="71" rx="18" ry="7" fill="url(#lg-bg)" stroke="#1D6344" stroke-width="1.5"/>
+<!-- Nucleoid ring -->
+<ellipse cx="24" cy="71" rx="7.5" ry="3" fill="none" stroke="#1D6344" stroke-width="0.9" opacity="0.45"/>
+<!-- DNA coil hint -->
+<path d="M 17,71 Q 20,67 24,71 Q 28,75 31,71"
+      fill="none" stroke="#1D6344" stroke-width="0.8" opacity="0.5"/>
+</svg>

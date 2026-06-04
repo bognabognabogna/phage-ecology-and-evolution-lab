@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research at the Phage Ecology and Evolution Group — prophage genomics, phage-bacteria coevolution, and mathematical ecology.">
+  <title>Research | Phage Ecology &amp; Evolution Group</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="images/group-logo.png" alt="Phage Ecology and Evolution Group" class="group-logo">
+      <div>
+        Phage Ecology &amp; Evolution Group
+        <span class="nav-brand-sub">University of Ostrava</span>
+      </div>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html"     class="active">Research</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="popular-science.html">Popular Science</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="ph">
+  <div class="container">
+    <h1>Research</h1>
+    <p>We use mathematical, computational, and genomic tools to understand the hidden roles of viruses in shaping bacterial life.</p>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="section section-alt">
+  <div class="container" style="max-width:860px;">
+    <h2 style="margin-bottom:1rem;text-align:center;">Our scientific questions</h2>
+    <p style="text-align:center;font-size:1.05rem;">Our research sits at the intersection of microbial ecology, evolutionary genomics, and mathematical biology. We ask: how do bacteriophages — viruses that infect bacteria — evolve and shape the evolution of their bacterial hosts? How do bacteria evolve to resist phage infection, and what does this mean for phage-based therapies? And how do the social dynamics of microbial communities drive their long-term evolution?</p>
+    <div class="tags" style="justify-content:center;margin-top:1.75rem;">
+      <span class="tag tag-b">Comparative Genomics</span>
+      <span class="tag tag-g">Bioinformatics</span>
+      <span class="tag tag-i">Mathematical Modelling</span>
+      <span class="tag tag-g">Data Science</span>
+      <span class="tag tag-b">Phage Biology</span>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH THEMES -->
+<section class="section">
+  <div class="container">
+
+    <!-- Theme 1 -->
+    <div class="rt">
+      <div class="rt-visual" style="background:#001525;">
+        <img src="images/graphic-genomics.png" alt="Prophage genomics and bacterial adaptation diagram" style="width:100%;height:100%;object-fit:cover;border-radius:var(--r-lg);">
+      </div>
+      <div>
+        <span class="rt-tag rt-tag-b">Flagship Project</span>
+        <h3>Prophage-Mediated Bacterial Adaptation to New Environments</h3>
+        <p>When a bacteriophage integrates into a bacterial chromosome it becomes a prophage — a dormant passenger that may persist for thousands of generations. Far from being inert cargo, prophage-encoded genes can fundamentally reshape their bacterial host's biology, conferring new metabolic capabilities, stress tolerance, or virulence factors.</p>
+        <p>Our flagship project investigates how prophages in bacteria act as engines of environmental adaptation. Drawing on <strong>thousands of bacterial genomes</strong> sampled from hospitals, community settings, and agricultural environments, we use large-scale bioinformatic analyses to map how prophage gene content and genetic flux vary across ecological niches — and to identify which prophage-encoded genes are putatively adaptive in each context.</p>
+        <p>The work has direct implications for understanding the emergence and persistence of hospital-acquired infections caused by clinically challenging bacterial pathogens.</p>
+        <div class="tags">
+          <span class="tag tag-b">Comparative Genomics</span>
+          <span class="tag tag-g">Bioinformatics</span>
+          <span class="tag tag-b">Bacterial Adaptation</span>
+          <span class="tag tag-b">Prophage Biology</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Theme 2 -->
+    <div class="rt flip">
+      <div class="rt-visual" style="background:#001525;">
+        <img src="images/graphic-coevo.png" alt="Phage-bacteria coevolution arms race diagram" style="width:100%;height:100%;object-fit:cover;border-radius:var(--r-lg);">
+      </div>
+      <div>
+        <span class="rt-tag rt-tag-g">Evolutionary Dynamics</span>
+        <h3>Phage–Bacteria Coevolution and Resistance Prediction</h3>
+        <p>The arms race between bacteria and bacteriophages is one of the most ancient and consequential conflicts in biology. Bacteria evolve resistance to phage infection; phages evolve to overcome that resistance. This cycle drives rapid diversification in both partners and shapes the ecology of every microbial community on Earth.</p>
+        <p>We study the quantitative rules governing this coevolutionary dance. Using mathematical models, comparative genomics, and machine learning, we develop frameworks and computational tools to predict when and how phage resistance will emerge — and which molecular features of the phage–host interface determine infection outcomes.</p>
+        <p>Our <strong>PhREEPred</strong> tool (published in <em>Journal of Molecular Biology</em>, 2022) applies these principles to generate data-driven predictions of resistance emergence trajectories from genomic sequences. Understanding resistance dynamics is critical for phage therapy applications, where sustained phage efficacy against antibiotic-resistant pathogens is a central clinical challenge.</p>
+        <div class="tags">
+          <span class="tag tag-g">Phage Resistance</span>
+          <span class="tag tag-b">Machine Learning</span>
+          <span class="tag tag-g">Phage Therapy</span>
+          <span class="tag tag-i">Mathematical Models</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Theme 3 -->
+    <div class="rt">
+      <div class="rt-visual" style="background:#160024;">
+        <img src="images/graphic-social.png" alt="Social evolution and public goods in microbial communities" style="width:100%;height:100%;object-fit:cover;border-radius:var(--r-lg);">
+      </div>
+      <div>
+        <span class="rt-tag rt-tag-i">Mathematical Biology</span>
+        <h3>Mathematical Ecology of Microbial Communities</h3>
+        <p>Microbial populations are not just ecological units — they are complex societies shaped by competition, cooperation, and the strategic use of shared resources. Microbes produce costly public goods (enzymes, signalling molecules, iron-scavenging siderophores) that benefit the group but can be exploited by non-producing cheats.</p>
+        <p>We use mathematical modelling and quantitative data analysis to understand how these social dynamics drive community structure and long-term evolutionary outcomes. Our published work has demonstrated that the privatisation of shared metabolic resources can trigger catastrophic population collapse (<em>Nature Ecology &amp; Evolution</em>, 2019), and that population density can paradoxically promote the evolution of cooperation under certain ecological conditions (<em>ISME Journal</em>, 2018).</p>
+        <p>We also develop statistical tools for the microbiology community — including the <strong>Microbial Lag Calculator</strong> (R package and Shiny app, <em>Methods in Ecology and Evolution</em>, 2024) — that make quantitative analysis of microbial growth dynamics accessible to empirical researchers.</p>
+        <div class="tags">
+          <span class="tag tag-i">Mathematical Modelling</span>
+          <span class="tag tag-g">Microbial Ecology</span>
+          <span class="tag tag-i">Data Science</span>
+          <span class="tag tag-g">Evolutionary Theory</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Interested in our work?</h2>
+    <p>We welcome collaborations and are actively recruiting researchers at all levels who are excited about quantitative microbiology.</p>
+    <div class="cta-btns">
+      <a href="publications.html" class="btn btn-green"><i class="fa-solid fa-book-open"></i> See Publications</a>
+      <a href="join.html"         class="btn btn-ghost"><i class="fa-solid fa-user-plus"></i> Join the Group</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ft">
+      <div>
+        <img src="images/group-logo.png" alt="Phage Ecology and Evolution Group" style="height:50px;width:auto;margin-bottom:.9rem;filter:none;display:block;">
+        <div class="ft-name">Phage Ecology &amp; Evolution Group</div>
+        <p class="ft-desc">Faculty of Science, University of Ostrava<br>Czech Republic</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="popular-science.html">Popular Science</a></li>
+      <li><a href="join.html">Join Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Profiles</h4>
+        <ul>
+          <li><a href="https://scholar.google.com/citations?user=FBpahnAAAAAJ&hl=pl" target="_blank">Google Scholar</a></li>
+          <li><a href="https://orcid.org/0000-0001-9364-163X" target="_blank">ORCID</a></li>
+          <li><a href="https://www.osu.cz/en/" target="_blank">University of Ostrava</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-support">
+      <span class="ft-support-label">Supported by</span>
+      <img src="lerco.png" alt="LERCO" class="ft-support-logo">
+    </div>
+    <div class="ft-bottom">
+      <span>© 2026 Phage Ecology &amp; Evolution Group · University of Ostrava</span>
+      <span>Built with HTML &amp; CSS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
