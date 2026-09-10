@@ -153,6 +153,9 @@ nav { position: fixed; inset: 0 0 auto; z-index: 1000; background: rgba(0,18,32,
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; }
 @media (max-width: 820px) { .about-grid { grid-template-columns: 1fr; } }
 
+.pi-grid { display: grid; grid-template-columns: 280px 1fr; gap: 4rem; align-items: start; }
+@media (max-width: 700px) { .pi-grid { grid-template-columns: 1fr; gap: 2rem; } }
+
 .rt-visual { border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4/3; position: relative; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1.2rem; }
 .rv-1 { background: linear-gradient(135deg, #001e38 0%, #003f70 50%, #0071BC 100%); }
 .rv-2 { background: linear-gradient(135deg, #001525 0%, #003325 50%, #1D6344 100%); }
