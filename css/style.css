@@ -78,7 +78,7 @@ nav { position: fixed; inset: 0 0 auto; z-index: 1000; background: rgba(0,18,32,
 .hero {
   min-height: 100vh; display: flex; flex-direction: column; justify-content: center;
   padding: 6rem 0 4rem;
-  background: linear-gradient(140deg, rgba(1,51,88,.60) 0%, rgba(15,96,174,.54) 35%, rgba(47,163,220,.48) 75%, rgba(38,149,110,.56) 100%), url('../computational_biology.jpeg') center/cover no-repeat;
+  background: linear-gradient(140deg, rgba(1,51,88,.60) 0%, rgba(15,96,174,.54) 35%, rgba(47,163,220,.48) 75%, rgba(38,149,110,.56) 100%), url('../images/computational_biology.jpeg') center/cover no-repeat;
   color: var(--white); position: relative; overflow: hidden;
 }
 .hero::before {
